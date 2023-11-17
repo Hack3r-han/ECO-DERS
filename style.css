@@ -21,3 +21,115 @@ h2 {
     font-size: 30px;
     padding: 1.5%;
 }
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media (max-width: 960px) {
+    header .navigation {
+        display: none;
+    }
+
+    header label {
+        color: #fff;
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+
+    header label:hover {
+        color: #b0d592;
+    }
+
+    header label .close-btn {
+        display: none;
+    }
+
+    #check:checked~header .navigation {
+        z-index: 2;
+        position: fixed;
+        background: rgb(71, 114, 78, 0.5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked~header .navigation a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+    #check:checked~header label .menu-btn {
+        display: none;
+    }
+
+    #check:checked~header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    header label .menu-btn {
+        position: absolute;
+    }
+
+    .items {
+        margin-top: 2.5%;
+    }
+}
+
+@media (max-width: 780px) {
+    header .name {
+        height: 30%;
+        width: 50%;
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 680px) {
+
+    .hero-text {
+        font-size: 75%;
+    }
+
+    .container-servicios-section {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-services {
+        justify-content: space-around;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logofooter {
+        height: 10vh;
+        width: 10vh;
+        margin-top: 15%;
+    }
+
+}
