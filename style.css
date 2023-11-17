@@ -21,3 +21,50 @@ h2 {
     font-size: 30px;
     padding: 1.5%;
 }
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5%;
+    background-color: #47724E;
+    color: white;
+    padding: 2%;
+}
+
+.logofooter {
+    height: 80%;
+    width: 80%;
+    margin-top: 15%;
+}
+
+.address .mobile {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 3%;
+    font-size: 30px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #47724E;
+    color: white;
+}
