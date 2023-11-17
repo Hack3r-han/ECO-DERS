@@ -1,0 +1,23 @@
+/*ESTILOS GENERALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #47724E;
+    font-size: 30px;
+    padding: 4% 0;
+}
