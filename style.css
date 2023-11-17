@@ -21,3 +21,123 @@ h2 {
     font-size: 30px;
     padding: 1.5%;
 }
+
+
+/* SERVICIOS */
+
+.container-servicios-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 4.5%;
+    min-width: 100%;
+}
+
+.items {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.negocio {
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vh;
+    padding-top: 3vh;
+    margin-left: -9%;
+}
+
+.extraone {
+    display: none;
+    margin-left: -12%;
+}
+
+input[type="checkbox"] {
+    height: 1vh;
+    appearance: none;
+}
+
+.container-servicios-section label {
+    display: flex;
+    background-color: #47724E;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4vh;
+    padding: 1%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-servicios-section label::before {
+    content: 'Leer más';
+}
+
+input[type="checkbox"]:checked~label::before {
+    content: 'Leer menos';
+}
+
+.dots:has(~ input[type="checkbox"]:checked) {
+    display: none;
+}
+
+.extraone:has(~ input[type="checkbox"]:checked) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vh;
+    height: 22.5vh;
+    padding-left: 1.5vh;
+    text-align: justify;
+}
+
+.extratwo {
+    display: none;
+    margin-left: -15%;
+}
+
+.extratwo:has(~ input[type="checkbox"]:checked) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vh;
+    height: 22.5vh;
+    padding-left: 1.5vh;
+    text-align: justify;
+}
+
+.extrathree {
+    display: none;
+    margin-left: -10%;
+
+
+}
+
+.extrathree:has(~ input[type="checkbox"]:checked) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vh;
+    height: 22.5vh;
+    padding-left: 1.5vh;
+    text-align: justify;
+}
+
+.extrafour {
+    display: none;
+    margin-left: -11.5%;
+}
+
+.extrafour:has(~ input[type="checkbox"]:checked) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vh;
+    height: 22.5vh;
+    padding-left: 1.5vh;
+    text-align: justify;
+}
